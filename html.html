@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Dynamics 365 com Filtro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="grid-container">
+        <table id="data-grid">
+            <thead>
+                <tr>
+                    <th>ID <span class="filter-icon" onclick="toggleFilter(0)">&#9662;</span>
+                        <input type="text" id="filter-id" class="filter-input" onkeyup="filterTable(0)" placeholder="Filtrar ID">
+                    </th>
+                    <th>Nome <span class="filter-icon" onclick="toggleFilter(1)">&#9662;</span>
+                        <input type="text" id="filter-nome" class="filter-input" onkeyup="filterTable(1)" placeholder="Filtrar Nome">
+                    </th>
+                    <th>Email <span class="filter-icon" onclick="toggleFilter(2)">&#9662;</span>
+                        <input type="text" id="filter-email" class="filter-input" onkeyup="filterTable(2)" placeholder="Filtrar Email">
+                    </th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas dinâmicas serão adicionadas aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

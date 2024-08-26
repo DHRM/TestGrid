@@ -1,0 +1,79 @@
+#grid-container {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+th {
+    background-color: #0078d4;
+    color: white;
+    font-weight: normal;
+}
+
+.filter-icon {
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.filter-input {
+    display: none;
+    margin-top: 5px;
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f3f2f1;
+    color: #323130;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.filter-input::placeholder {
+    color: #a6a6a6;
+}
+
+.filter-input:focus {
+    background-color: #fff;
+    border-color: #0078d4;
+    outline: none;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+button:active {
+    background-color: #004578;
+}
